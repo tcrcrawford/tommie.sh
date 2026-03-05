@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Tommie Crawford</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #2563eb;
+      --text:   #1e293b;
+      --muted:  #64748b;
+      --border: #e2e8f0;
+      --bg:     #f8fafc;
+    }
+
+    html { font-size: 14px; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+
+    /* ── SCREEN WRAPPER ── */
+    .page-wrap {
+      max-width: 860px;
+      margin: 2.5rem auto;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,.08);
+    }
+
+    /* ── TOOLBAR ── */
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .75rem 1.5rem;
+      background: #0f172a;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .toolbar a.back {
+      text-decoration: none;
+      font-size: .8rem;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+    }
+    .toolbar a.back:hover { color: #f1f5f9; }
+    .toolbar button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: .45rem 1.1rem;
+      font-size: .8rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      box-shadow: 0 2px 10px rgba(37,99,235,.4);
+    }
+    .toolbar button:hover { background: #1d4ed8; }
+
+    /* ── CV BODY ── */
+    .cv {
+      padding: 3rem 3.5rem;
+    }
+
+    /* Header */
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      padding-bottom: 1.6rem;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 1.8rem;
+    }
+    .cv-header-left h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: -.03em;
+      color: var(--text);
+      line-height: 1.1;
+    }
+    .cv-header-left .role {
+      font-size: .95rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: .3rem;
+    }
+    .cv-header-right {
+      text-align: right;
+      font-size: .8rem;
+      color: var(--muted);
+      line-height: 1.8;
+      flex-shrink: 0;
+    }
+    .cv-header-right a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Sections */
+    .cv-section { margin-bottom: 1.8rem; }
+    .cv-section-title {
+      font-size: .65rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: .35rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Profile */
+    .cv-profile p {
+      font-size: .875rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* Experience */
+    .cv-job { margin-bottom: 1.2rem; }
+    .cv-job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .cv-job-title {
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .cv-job-company {
+      font-size: .82rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: .1rem;
+    }
+    .cv-job-meta {
+      font-size: .75rem;
+      color: var(--muted);
+      text-align: right;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .cv-job-desc {
+      font-size: .82rem;
+      color: var(--muted);
+      margin-top: .45rem;
+      line-height: 1.6;
+    }
+
+    /* Skills */
+    .skills-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .6rem 1.5rem;
+    }
+    .skill-group-name {
+      font-size: .72rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: .2rem;
+    }
+    .skill-tags {
+      font-size: .78rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* Certs & Education */
+    .two-col-cv {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .cv-item { margin-bottom: .9rem; }
+    .cv-item-title {
+      font-size: .85rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .cv-item-sub {
+      font-size: .78rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-top: .1rem;
+    }
+    .cv-item-meta {
+      font-size: .73rem;
+      color: var(--muted);
+      margin-top: .1rem;
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      html { font-size: 11px; }
+      body { background: #fff; }
+      .toolbar { display: none; }
+      .page-wrap {
+        max-width: 100%;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .cv { padding: 2rem 2.5rem; }
+      .cv-job { page-break-inside: avoid; }
+      a { color: inherit !important; text-decoration: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <!-- Toolbar (alleen op scherm) -->
+  <div class="toolbar">
+    <a href="index.html" class="back">
+      &larr; Terug naar website
+    </a>
+    <button onclick="window.print()">
+      &#8595; Downloaden als PDF
+    </button>
+  </div>
+
+  <div class="cv">
+
+    <!-- HEADER -->
+    <div class="cv-header">
+      <div class="cv-header-left">
+        <h1>Tommie Crawford</h1>
+        <div class="role">Cloud &amp; DevOps Engineer &nbsp;&middot;&nbsp; Software Engineer</div>
+      </div>
+      <div class="cv-header-right">
+        Utrecht Area, Nederland<br>
+        <a href="mailto:info@tommie.sh">info@tommie.sh</a><br>
+        <a href="https://tommie.sh">tommie.sh</a><br>
+        <a href="https://www.linkedin.com/in/tommiecrawford/">linkedin.com/in/tommiecrawford</a>
+      </div>
+    </div>
+
+    <!-- PROFIEL -->
+    <div class="cv-section cv-profile">
+      <div class="cv-section-title">Profiel</div>
+      <p>
+        Allround full-stack developer met 13+ jaar ervaring in backend, frontend, DevOps en cloud-architectuur.
+        Gespecialiseerd in PHP, Drupal, Symfony en maatwerk API-integraties. Bouwt complete applicaties:
+        van solide backend-logica en schaalbare architecturen tot geautomatiseerde CI/CD-processen.
+        Sterk in het snel doorgronden van codebases, problemen concreet maken en oplossingen leveren
+        die direct impact hebben op kwaliteit, stabiliteit en continuïteit.
+      </p>
+    </div>
+
+    <!-- WERKERVARING -->
+    <div class="cv-section">
+      <div class="cv-section-title">Werkervaring</div>
+
+      <div class="cv-job">
+        <div class="cv-job-header">
+          <div>
+            <div class="cv-job-title">Developer</div>
+            <div class="cv-job-company">OSW B.V. &mdash; Nieuwegein</div>
+          </div>
+          <div class="cv-job-meta">jan 2026 &ndash; heden</div>
+        </div>
+        <div class="cv-job-desc">
+          Bouwen en onderhouden van schaalbare webapplicaties. Ontwikkelen van nieuwe backend-features,
+          verbeteren en refactoren van bestaande systemen en waarborgen van performance, security en
+          betrouwbaarheid. Ontwerp en implementatie van RESTful API's, toepassen van clean code en
+          SOLID-principes, en bijdragen aan technische en architecturele beslissingen.
+        </div>
+      </div>
+
+      <div class="cv-job">
+        <div class="cv-job-header">
+          <div>
+            <div class="cv-job-title">Backend Developer</div>
+            <div class="cv-job-company">Immer &mdash; Digital Agency, Utrecht</div>
+          </div>
+          <div class="cv-job-meta">apr 2021 &ndash; okt 2025 &middot; 4 jr 7 mnd</div>
+        </div>
+        <div class="cv-job-desc">
+          Hybride rol: backend development met Drupal én DevOps-taken. Verantwoordelijk voor het
+          automatiseren en beheren van CI/CD-pipelines, opzetten en onderhouden van cloudinfrastructuren,
+          en implementeren van best practices voor beveiliging en monitoring.
+        </div>
+      </div>
+
+      <div class="cv-job">
+        <div class="cv-job-header">
+          <div>
+            <div class="cv-job-title">Full Stack Developer</div>
+            <div class="cv-job-company">Appnovation (v/h Wunderkraut), Utrecht</div>
+          </div>
+          <div class="cv-job-meta">mrt 2016 &ndash; apr 2021 &middot; 5 jr 2 mnd</div>
+        </div>
+        <div class="cv-job-desc">
+          Ontwikkeling en optimalisatie van grootschalige websites voor diverse klanten. Front-end én
+          back-end Drupal-development: implementatie van modules, thema-aanpassingen en op maat gemaakte
+          oplossingen voor specifieke klantbehoeften.
+        </div>
+      </div>
+
+      <div class="cv-job">
+        <div class="cv-job-header">
+          <div>
+            <div class="cv-job-title">Backend Developer</div>
+            <div class="cv-job-company">Basebuilder</div>
+          </div>
+          <div class="cv-job-meta">jun 2015 &ndash; feb 2016 &middot; 9 mnd</div>
+        </div>
+        <div class="cv-job-desc">
+          Beheer en verwerking van inkomende leads via het Basebuilder-platform. Integratie van
+          externe API's voor efficiënte gegevensoverdracht en optimalisatie van leadverwerking.
+        </div>
+      </div>
+
+      <div class="cv-job">
+        <div class="cv-job-header">
+          <div>
+            <div class="cv-job-title">Full Stack Developer</div>
+            <div class="cv-job-company">ProdaCom Internet &amp; Ontwikkeling, Langerak</div>
+          </div>
+          <div class="cv-job-meta">feb 2013 &ndash; mei 2015 &middot; 2 jr 4 mnd</div>
+        </div>
+        <div class="cv-job-desc">
+          Eerste stappen in softwareontwikkeling: werken aan bedrijfswebsites en interne applicaties
+          met HTML, CSS en JavaScript.
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="cv-section">
+      <div class="cv-section-title">Vaardigheden</div>
+      <div class="skills-row">
+        <div>
+          <div class="skill-group-name">Backend</div>
+          <div class="skill-tags">PHP &middot; Symfony &middot; Drupal &middot; REST API</div>
+        </div>
+        <div>
+          <div class="skill-group-name">Cloud &amp; Infrastructure</div>
+          <div class="skill-tags">AWS &middot; Kubernetes &middot; Docker &middot; Terraform</div>
+        </div>
+        <div>
+          <div class="skill-group-name">DevOps &amp; CI/CD</div>
+          <div class="skill-tags">CI/CD Pipelines &middot; GitOps &middot; Monitoring &middot; Security</div>
+        </div>
+        <div>
+          <div class="skill-group-name">Frontend</div>
+          <div class="skill-tags">HTML/CSS &middot; JavaScript &middot; Twig</div>
+        </div>
+        <div>
+          <div class="skill-group-name">Principes</div>
+          <div class="skill-tags">SOLID &middot; Clean Code &middot; Microservices &middot; Scalability</div>
+        </div>
+        <div>
+          <div class="skill-group-name">Talen</div>
+          <div class="skill-tags">Nederlands (moedertaal) &middot; Engels</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CERTIFICERINGEN & OPLEIDING -->
+    <div class="cv-section">
+      <div class="cv-section-title">Certificeringen &amp; Opleiding</div>
+      <div class="two-col-cv">
+        <div>
+          <div class="cv-item">
+            <div class="cv-item-title">AWS Certified Cloud Practitioner</div>
+            <div class="cv-item-sub">Amazon Web Services (AWS)</div>
+            <div class="cv-item-meta">Verified</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">HashiCorp Certified: Terraform Associate</div>
+            <div class="cv-item-sub">HashiCorp</div>
+            <div class="cv-item-meta">Verified</div>
+          </div>
+        </div>
+        <div>
+          <div class="cv-item">
+            <div class="cv-item-title">Niveau 4 &mdash; Mediatechnologie (Webdevelopment)</div>
+            <div class="cv-item-sub">MBO Utrecht</div>
+            <div class="cv-item-meta">2009 &ndash; 2013</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Niveau 3 &mdash; Netwerkbeheer</div>
+            <div class="cv-item-sub">MBO Utrecht</div>
+            <div class="cv-item-meta">2008 &ndash; 2009</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Kader &mdash; Handel &amp; Administratie</div>
+            <div class="cv-item-sub">Oosterlicht College Vianen</div>
+            <div class="cv-item-meta">2003 &ndash; 2007</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /cv -->
+</div><!-- /page-wrap -->
+
+</body>
+</html>
