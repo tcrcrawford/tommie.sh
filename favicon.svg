@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#0d1117"/>
+  <rect width="32" height="32" rx="7" fill="none" stroke="#4ade80" stroke-width="1" opacity="0.3"/>
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+    font-family="'SF Mono', 'Fira Code', 'Roboto Mono', monospace"
+    font-size="13" font-weight="700" fill="#4ade80" letter-spacing="-0.5">&gt;_</text>
+</svg>
