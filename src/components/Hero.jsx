@@ -55,11 +55,13 @@ export default function Hero() {
         <div className="hero-visual">
           <div className="avatar-card">
             <img src="/photo.png" alt="Tommie Crawford" className="avatar-photo" />
-            <div className="avatar-name">Tommie Crawford</div>
-            <div className="avatar-role">Cloud &amp; Web Engineer</div>
-            <div className="avatar-location-tag">
-              <LocationPin />
-              Utrecht, Nederland
+            <div className="avatar-text">
+              <div className="avatar-name">Tommie Crawford</div>
+              <div className="avatar-role">Cloud &amp; Web Engineer</div>
+              <div className="avatar-location-tag">
+                <LocationPin />
+                Utrecht, Nederland
+              </div>
             </div>
           </div>
           <div className="cert-card-mini">

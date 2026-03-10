@@ -155,6 +155,7 @@ nav .nav-cta:hover { background: #1d4ed8; }
   .hero-avatar-mobile { display: none; }
   .hero-visual {
     width: 100%;
+    min-width: 0;
     flex-shrink: unset;
   }
   .avatar-card {
@@ -175,8 +176,17 @@ nav .nav-cta:hover { background: #1d4ed8; }
     width: 72px; height: 72px;
     margin: 0; flex-shrink: 0;
   }
-  .avatar-card > div {
+  .avatar-text {
+    display: flex;
+    flex-direction: column;
     min-width: 0;
+    overflow: hidden;
+  }
+  .avatar-text .avatar-name,
+  .avatar-text .avatar-role {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -383,7 +393,7 @@ h2 em { font-style: normal; color: var(--muted); font-weight: 400; }
 }
 .timeline-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.09); }
 .job-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: .3rem; }
-.job-title { font-size: 1rem; font-weight: 700; color: var(--text); }
+.job-title { font-size: 1rem; font-weight: 700; color: var(--text); margin: 0; }
 .job-company { color: var(--accent); font-weight: 600; font-size: .9rem; margin-top: .1rem; }
 .job-meta { font-size: .78rem; color: var(--muted); text-align: right; line-height: 1.5; }
 .job-desc { margin-top: .7rem; font-size: .875rem; color: var(--muted); }

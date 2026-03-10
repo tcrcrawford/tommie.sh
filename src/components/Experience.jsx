@@ -76,7 +76,7 @@ export default function Experience() {
               <div className="timeline-card">
                 <div className="job-header">
                   <div>
-                    <div className="job-title">{job.title}</div>
+                    <h3 className="job-title">{job.title}</h3>
                     <div className="job-company">
                       {job.company}
                       {job.companyExtra && (
