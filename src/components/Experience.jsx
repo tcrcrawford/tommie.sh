@@ -1,26 +1,26 @@
 const jobs = [
   {
-    title: 'Senior Developer',
+    title: 'Cloud & Software Engineer',
     company: 'OSW B.V.',
     companyExtra: null,
     period: 'jan 2026 – heden',
-    tags: ['web'],
+    tags: ['cloud', 'web'],
     bullets: [
-      'Ontwikkelen van schaalbare PHP/Symfony webapplicaties en RESTful API\'s',
-      'Verantwoordelijk voor architecturele beslissingen en refactoring van bestaande systemen',
-      'Bewaken van codekwaliteit via clean code, SOLID-principes en security-reviews',
+      'Meedenken over cloudinfrastructuur en architecturele keuzes binnen het platform',
+      'Bijdragen aan schaalbaarheid, security en betrouwbaarheid van de omgeving',
+      'Backend development in PHP/Symfony als aanvulling op cloud- en infrastructuurwerk',
     ],
   },
   {
-    title: 'Backend Developer & DevOps Engineer',
+    title: 'Cloud & DevOps Engineer',
     company: 'Immer — Digital Agency',
     companyExtra: null,
     period: 'apr 2021 – okt 2025 · 4 jr 7 mnd',
-    tags: ['web', 'cloud'],
+    tags: ['cloud', 'web'],
     bullets: [
-      'Hybride rol: Drupal backend development én het opzetten van cloudinfrastructuur op AWS',
-      'CI/CD-pipelines geautomatiseerd en Kubernetes-clusters opgezet met Terraform en Docker',
-      'DevOps-volwassenheid structureel verhoogd door monitoring, GitOps en security-best-practices te introduceren',
+      'Ontwerpen en beheren van AWS-cloudinfrastructuur: VPC, ECS, RDS, S3, IAM en CloudWatch',
+      'Cloudinfrastructuur ontworpen en beheerd voor grootschalige enterprise-websites met hoge beschikbaarheid op AWS',
+      'CI/CD-pipelines geautomatiseerd, GitOps ingevoerd en security-best-practices doorgevoerd',
     ],
   },
   {
@@ -30,9 +30,9 @@ const jobs = [
     period: 'mrt 2016 – apr 2021 · 5 jr 2 mnd',
     tags: ['web'],
     bullets: [
-      'Ontwikkeling van grootschalige Drupal-platforms voor klanten in uiteenlopende sectoren',
-      'Volledige front-end en back-end implementatie: maatwerk modules, thema\'s en API-koppelingen',
-      'Snel schakelen tussen meerdere klantcontexten en technische omgevingen',
+      'Ontwikkeling van grootschalige webplatforms voor klanten in uiteenlopende sectoren',
+      'Eerste hands-on ervaring met deploymentprocessen, serverbeheer en technische omgevingen',
+      'Opgebouwde brede technische basis die later de stap naar cloud engineering mogelijk maakte',
     ],
   },
   {
@@ -53,8 +53,8 @@ const jobs = [
     period: 'feb 2013 – mei 2015 · 2 jr 4 mnd',
     tags: ['web'],
     bullets: [
-      'Full stack webontwikkeling: bedrijfswebsites en interne applicaties in HTML, CSS, JavaScript en PHP',
-      'Fundament gelegd voor technische kwaliteit en oog voor gebruikerservaring',
+      'Beginjaren in softwareontwikkeling: bedrijfswebsites en interne applicaties',
+      'Fundament gelegd voor technische kwaliteit en systeembegrip',
     ],
   },
 ]

@@ -3,43 +3,41 @@ export default function About() {
     <section id="about">
       <div className="container">
         <p className="section-label">Over mij</p>
-        <h2>Senior engineer <em>met een volledige stack — van webapplicatie tot cloud</em></h2>
+        <h2>Cloud-native Engineer <em>gespecialiseerd in schaalbare infrastructuur en DevOps</em></h2>
         <div className="about-grid">
           <div className="about-text">
             <p>
-              Met 13+ jaar ervaring beheers ik twee disciplines volledig: ik bouw robuuste
-              webapplicaties in PHP en Symfony — van complexe RESTful API's en maatwerk Drupal-platforms
-              tot geoptimaliseerde backends met clean architecture — én ik ontwerp en beheer schaalbare
-              cloudinfrastructuur op AWS met Kubernetes, Terraform en Docker.
+              Met 13+ jaar technische ervaring richt ik mij volledig op cloud engineering. Ik ontwerp,
+              bouw en beheer schaalbare cloud-native infrastructuur: van containerplatforms en
+              Terraform-modules tot geautomatiseerde CI/CD-pipelines en productie-ready cloudomgevingen.
             </p>
             <p>
-              Die combinatie maakt het verschil: ik denk mee op applicatieniveau én op
-              infrastructuurniveau. Of het nu gaat om het moderniseren van een legacy-systeem,
-              het opzetten van CI/CD-pipelines, het verbeteren van security of het schaalbaar
-              maken van een platform — ik pak het van begin tot eind op.
+              Mijn achtergrond als developer geeft mij een uniek voordeel: ik begrijp wat applicaties
+              nodig hebben en vertaal dat direct naar robuuste, veilige en kostenefficiënte infrastructuur.
+              Of het nu gaat om een cloud-migratie, het opzetten van een GitOps-workflow, security-hardening
+              of het schaalbaar maken van een platform — ik lever snel en zonder lange aanlooptijd.
             </p>
             <p>
-              Mijn kracht is het snel doorgronden van zowel code als infrastructuur, en het
-              direct leveren van oplossingen met meetbare impact op kwaliteit, stabiliteit en
-              schaalbaarheid — zonder lange aanlooptijd.
+              Beschikbaar voor freelance cloudopdrachten én vaste functies als Cloud Engineer,
+              DevOps Engineer of Platform Engineer.
             </p>
           </div>
           <div className="about-cards">
             <div className="card">
               <div className="card-title">Profiel</div>
-              <div className="card-value">Cloud &amp; Web Engineer — Utrecht Area</div>
+              <div className="card-value">Cloud-native Engineer — Utrecht Area</div>
             </div>
             <div className="card">
-              <div className="card-title">Ervaring</div>
-              <div className="card-value">13+ jaar in webontwikkeling &amp; cloud</div>
+              <div className="card-title">Beschikbaarheid</div>
+              <div className="card-value">Freelance opdrachten &amp; vaste posities</div>
             </div>
             <div className="card">
               <div className="card-title">Certificeringen</div>
               <div className="card-value">AWS Certified · HashiCorp Terraform Associate</div>
             </div>
             <div className="card">
-              <div className="card-title">Talen</div>
-              <div className="card-value">Nederlands (moedertaal) · Engels</div>
+              <div className="card-title">Niche</div>
+              <div className="card-value">Cloud-native · Kubernetes · Terraform · IaC</div>
             </div>
           </div>
         </div>

@@ -1,23 +1,26 @@
 const skillGroups = [
   {
-    title: 'Backend & Webontwikkeling',
+    title: 'Cloud Platforms',
     tags: [
-      { label: 'PHP' },
-      { label: 'Symfony' },
-      { label: 'Drupal' },
-      { label: 'REST API' },
-      { label: 'MySQL' },
-      { label: 'API Integraties' },
+      { label: 'AWS', color: 'green' },
+      { label: 'Cloud-native', color: 'green' },
+      { label: 'Containers', color: 'green' },
+      { label: 'Serverless', color: 'green' },
+      { label: 'Managed Services', color: 'green' },
     ],
   },
   {
-    title: 'Cloud & Infrastructure',
+    title: 'Infrastructure as Code',
     tags: [
-      { label: 'AWS', color: 'green' },
+      { label: 'Terraform', color: 'green' },
+      { label: 'Helm', color: 'green' },
+    ],
+  },
+  {
+    title: 'Container Orchestration',
+    tags: [
       { label: 'Kubernetes', color: 'green' },
       { label: 'Docker', color: 'green' },
-      { label: 'Terraform', color: 'green' },
-      { label: 'Infrastructure as Code', color: 'green' },
     ],
   },
   {
@@ -25,35 +28,35 @@ const skillGroups = [
     tags: [
       { label: 'CI/CD Pipelines', color: 'orange' },
       { label: 'GitOps', color: 'orange' },
-      { label: 'Monitoring', color: 'orange' },
-      { label: 'Security', color: 'orange' },
+      { label: 'GitHub Actions', color: 'orange' },
+      { label: 'Monitoring & Alerting', color: 'orange' },
       { label: 'Linux', color: 'orange' },
+      { label: 'Security & Hardening', color: 'orange' },
     ],
   },
   {
-    title: 'Frontend & Web',
+    title: 'Cloud Architectuur',
     tags: [
-      { label: 'HTML/CSS', color: 'cyan' },
-      { label: 'JavaScript', color: 'cyan' },
-      { label: 'TypeScript', color: 'cyan' },
-      { label: 'Twig', color: 'cyan' },
-      { label: 'Responsive Design', color: 'cyan' },
+      { label: 'Microservices', color: 'cyan' },
+      { label: 'Scalability', color: 'cyan' },
+      { label: 'High Availability', color: 'cyan' },
+      { label: 'Cost Optimisation', color: 'cyan' },
+      { label: 'Disaster Recovery', color: 'cyan' },
     ],
   },
   {
-    title: 'Principes',
+    title: 'Backend (aanvullend)',
     tags: [
-      { label: 'SOLID', color: 'gray' },
-      { label: 'Clean Code', color: 'gray' },
-      { label: 'Microservices', color: 'gray' },
-      { label: 'Scalability', color: 'gray' },
+      { label: 'PHP', color: 'gray' },
+      { label: 'Symfony', color: 'gray' },
+      { label: 'REST API', color: 'gray' },
+      { label: 'MySQL', color: 'gray' },
     ],
   },
   {
     title: 'Tooling & AI',
     tags: [
-      { label: 'Git', color: 'gray' },
-      { label: 'VS Code', color: 'gray' },
+      { label: 'Git', color: 'ai' },
       { label: 'Claude Code', color: 'ai' },
       { label: 'GitHub Copilot', color: 'ai' },
       { label: 'Ollama', color: 'ai' },

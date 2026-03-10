@@ -21,8 +21,8 @@ export default function Hero() {
             <span className="name-accent">Crawford</span>
           </h1>
           <p className="hero-subtitle">
-            Engineer die webapplicaties bouwt én de cloud erachter draait —
-            van PHP tot AWS en Kubernetes.
+            Cloud-native Engineer gespecialiseerd in schaalbare cloudinfrastructuur,
+            container orchestration en Infrastructure as Code — beschikbaar voor opdrachten en vaste posities.
           </p>
           <p className="hero-location">
             <LocationPin />
@@ -48,6 +48,10 @@ export default function Hero() {
               <div className="stat-num">2×</div>
               <div className="stat-label">Gecertificeerd</div>
             </div>
+            <div className="stat">
+              <div className="stat-num">IaC</div>
+              <div className="stat-label">Terraform · Docker</div>
+            </div>
           </div>
         </div>
 
@@ -57,7 +61,7 @@ export default function Hero() {
             <img src="/photo.png" alt="Tommie Crawford" className="avatar-photo" />
             <div className="avatar-text">
               <div className="avatar-name">Tommie Crawford</div>
-              <div className="avatar-role">Cloud &amp; Web Engineer</div>
+              <div className="avatar-role">Cloud-native Engineer</div>
               <div className="avatar-location-tag">
                 <LocationPin />
                 Utrecht, Nederland
