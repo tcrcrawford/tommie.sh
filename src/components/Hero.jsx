@@ -15,6 +15,7 @@ export default function Hero() {
       <div id="hero">
         {/* LEFT: text */}
         <div className="hero-left">
+          <img src="/photo.png" alt="Tommie Crawford" className="hero-avatar-mobile" />
           <h1>
             Tommie<br />
             <span className="name-accent">Crawford</span>

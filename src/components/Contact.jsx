@@ -95,16 +95,6 @@ export default function Contact() {
           </div>
         </form>
 
-        <div className="contact-links" style={{ marginTop: '2rem' }}>
-          <a
-            href="https://www.linkedin.com/in/tommiecrawford/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-contact-secondary"
-          >
-            LinkedIn
-          </a>
-        </div>
       </div>
     </section>
   )
