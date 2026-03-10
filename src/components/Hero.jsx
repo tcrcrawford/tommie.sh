@@ -21,8 +21,8 @@ export default function Hero() {
             <span className="name-accent">Crawford</span>
           </h1>
           <p className="hero-subtitle">
-            Senior engineer die webapplicaties bouwt én de cloud achter draait —
-            van PHP/Symfony tot AWS en Kubernetes.
+            Engineer die webapplicaties bouwt én de cloud erachter draait —
+            van PHP tot AWS en Kubernetes.
           </p>
           <p className="hero-location">
             <LocationPin />
@@ -48,10 +48,6 @@ export default function Hero() {
               <div className="stat-num">2×</div>
               <div className="stat-label">Gecertificeerd</div>
             </div>
-            <div className="stat">
-              <div className="stat-num">Full</div>
-              <div className="stat-label">Stack</div>
-            </div>
           </div>
         </div>
 
@@ -60,7 +56,7 @@ export default function Hero() {
           <div className="avatar-card">
             <img src="/photo.png" alt="Tommie Crawford" className="avatar-photo" />
             <div className="avatar-name">Tommie Crawford</div>
-            <div className="avatar-role">Senior Cloud &amp; Web Engineer</div>
+            <div className="avatar-role">Cloud &amp; Web Engineer</div>
             <div className="avatar-location-tag">
               <LocationPin />
               Utrecht, Nederland
